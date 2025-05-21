@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "nombre": "Luis",
+    "apellido": "García",
+    "genero": "masculino",
+    "fecha_nacimiento": "2000-05-15",
+    "telefono": "555-123-4567",
+    "correo_electronico": "luis.garcia@example.com",
+    "foto": "https://example.com/fotos/luis.jpg",
+    "instituto_procedencia": "Universidad Nacional Autónoma de México",
+    "carrera": "Ingeniería en Sistemas",
+    "lenguajes_programacion": [
+      "JavaScript",
+      "Python",
+      "C++"
+    ],
+    "notas": "Estudiante destacado con interés en inteligencia artificial."
+  },
+  {
+    "id": 2,
+    "nombre": "María",
+    "apellido": "López",
+    "genero": "femenino",
+    "fecha_nacimiento": "1999-11-23",
+    "telefono": "555-987-6543",
+    "correo_electronico": "maria.lopez@example.com",
+    "foto": "https://example.com/fotos/maria.jpg",
+    "instituto_procedencia": "Instituto Politécnico Nacional",
+    "carrera": "Tecnologías de la Información",
+    "lenguajes_programacion": [
+      "Java",
+      "PHP",
+      "HTML",
+      "CSS"
+    ],
+    "notas": "Buena capacidad de trabajo en equipo y pasión por el desarrollo web."
+  },
+  {
+    "id": 3,
+    "nombre": "Carlos",
+    "apellido": "Ramírez",
+    "genero": "masculino",
+    "fecha_nacimiento": "2001-08-30",
+    "telefono": "555-222-3344",
+    "correo_electronico": "carlos.ramirez@example.com",
+    "foto": "https://example.com/fotos/carlos.jpg",
+    "instituto_procedencia": "Universidad Autónoma de Guadalajara",
+    "carrera": "Ingeniería en Software",
+    "lenguajes_programacion": [
+      "Python",
+      "Dart",
+      "JavaScript"
+    ],
+    "notas": "Apasionado por el desarrollo móvil con Flutter."
+  }
+]
