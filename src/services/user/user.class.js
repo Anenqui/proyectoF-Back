@@ -92,5 +92,11 @@ export class UserService {
     };
   }
 }
+export const removeSelfProperty = async context => {
+  if (context.data && context.data.self) {
+    delete context.data.self
+  }
+  return context
+}
 
 export const getOptions = app => ({});
