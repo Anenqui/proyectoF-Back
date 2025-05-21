@@ -26,7 +26,7 @@
     "fecha_nacimiento": "2002-07-21",
     "telefono": "5561122334",
     "correo_electronico": "ana.martinez@example.com",
-    "foto": "https://example.com/fotos/ana.jpg",
+    "foto": "/uploads/1747854797923-165947323.jpg",
     "instituto_procedencia": "Universidad de Guadalajara",
     "carrera": "Ingeniería en Software",
     "lenguajes_programacion": {
@@ -96,6 +96,25 @@
   },
   {
     "id": 2,
+    "nombre": "adios",
+    "apellido": "Martínez",
+    "genero": "femenino",
+    "fecha_nacimiento": "2002-07-21",
+    "telefono": "5561122334",
+    "correo_electronico": "ana.martinez@example.com",
+    "foto": "https://example.com/fotos/ana.jpg",
+    "instituto_procedencia": "Universidad de Guadalajara",
+    "carrera": "Ingeniería en Software",
+    "lenguajes_programacion": {
+      "JavaScript": true,
+      "HTML": true,
+      "CSS": true,
+      "Dart": true
+    },
+    "notas": "Muy creativa. Le encanta el desarrollo frontend con Flutter."
+  },
+  {
+    "id": 3,
     "nombre": "adios",
     "apellido": "Martínez",
     "genero": "femenino",

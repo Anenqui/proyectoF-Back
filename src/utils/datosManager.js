@@ -19,8 +19,13 @@ export async function escribirDatos(datos) {
   await fs.writeFile(datosPath, JSON.stringify(datos, null, 2), 'utf-8')
 }
 
-export async function agregarRegistro(nuevoRegistro) {
-  const datosActuales = await leerDatos()
-  datosActuales.push(nuevoRegistro)
-  await escribirDatos(datosActuales)
+export async function actualizarFoto(id, fotoPath) {
+  const datos = await leerDatos()
+  const index = datos.findIndex(item => item.id === id)
+  if (index === -1) {
+    throw new Error('Registro no encontrado')
+  }
+  datos[index].foto = fotoPath
+  await escribirDatos(datos)
+  return datos[index]
 }
