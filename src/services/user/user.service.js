@@ -28,13 +28,14 @@ const removeSelfProperty = async context => {
   }
   return context
 }
+
+// Hook para validar la fecha de nacimiento
 const validarFechaNacimiento = async context => {
   const { fecha_nacimiento } = context.data;
 
   if (fecha_nacimiento) {
     const fecha = new Date(fecha_nacimiento);
     const hoy = new Date();
-
 
     hoy.setHours(0, 0, 0, 0);
     fecha.setHours(0, 0, 0, 0);
@@ -46,6 +47,24 @@ const validarFechaNacimiento = async context => {
 
   return context;
 };
+
+// ✅ Hook para convertir strings JSON a objetos
+const parseJsonFields = (fields) => {
+  return async (context) => {
+    if (context.data) {
+      for (const field of fields) {
+        if (typeof context.data[field] === 'string') {
+          try {
+            context.data[field] = JSON.parse(context.data[field])
+          } catch (e) {
+            throw new Error(`El campo '${field}' no contiene JSON válido`)
+          }
+        }
+      }
+    }
+    return context
+  }
+}
 
 export function user(app) {
   app.use('/api/residentes', new UserService(getOptions(app)), {
@@ -60,23 +79,29 @@ export function user(app) {
       ]
     },
     before: {
-      all: [validateQuery(userQueryValidator), resolveData(userQueryResolver)],
+      all: [
+        validateQuery(userQueryValidator),
+        resolveData(userQueryResolver)
+      ],
       find: [],
       get: [],
       create: [
         removeSelfProperty,
+        parseJsonFields(['lenguajes_programacion']), 
         validateData(userDataValidator),
         validarFechaNacimiento,
         resolveData(userDataResolver)
       ],
       update: [
         removeSelfProperty,
+        parseJsonFields(['lenguajes_programacion']), 
         validarFechaNacimiento,
         validateData(userUpdateValidator),
         resolveData(userUpdateResolver)
       ],
       patch: [
         removeSelfProperty,
+        parseJsonFields(['lenguajes_programacion']), 
         validarFechaNacimiento,
         validateData(userPatchValidator),
         resolveData(userPatchResolver)

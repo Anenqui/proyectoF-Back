@@ -51,10 +51,11 @@ app.use(cors())
 app.use(json())
 app.use(urlencoded({ extended: true }))
 
+// Servir archivos estáticos (públicos y uploads)
 app.use('/', serveStatic(app.get('public')))
-
 app.use('/uploads', express.static(path.resolve(__dirname, '../uploads')))
 
+// Ruta para subir imagen y actualizar JSON datos.json
 app.post('/upload', upload.single('imagen'), async (req, res) => {
   try {
     const dbPath = path.resolve(__dirname, '../data/datos.json')
@@ -65,6 +66,8 @@ app.post('/upload', upload.single('imagen'), async (req, res) => {
     } catch (err) {
       if (err.code !== 'ENOENT') throw err
     }
+
+    // Validar que se envió id para actualizar registro
     const id = Number(req.body.id)
     if (!id) {
       return res.status(400).json({ error: 'Falta el campo id para identificar el registro a actualizar' })
@@ -75,8 +78,10 @@ app.post('/upload', upload.single('imagen'), async (req, res) => {
       return res.status(404).json({ error: 'No se encontró registro con ese id' })
     }
 
+    // Actualizar la propiedad foto con la ruta relativa de la imagen subida
     data[index].foto = `/uploads/${req.file.filename}`
 
+    // Guardar archivo JSON actualizado
     await fsPromises.writeFile(dbPath, JSON.stringify(data, null, 2))
 
     res.json({

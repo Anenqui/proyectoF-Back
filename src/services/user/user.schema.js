@@ -5,8 +5,11 @@ import { dataValidator, queryValidator } from '../../validators.js'
 const carrerasPermitidas = [
   'Ingeniería en Sistemas',
   'Ingeniería en Software',
-  'Tecnologías de la Información'
-]
+  'Ingenieria en Tecnologías de la Información',
+  'Ingeniería en Computación',
+  'Otra carrera'
+];
+
 
 const lenguajesPermitidos = [
   'JavaScript', 'Python', 'C++', 'Java', 'PHP', 'HTML', 'CSS', 'Dart'
