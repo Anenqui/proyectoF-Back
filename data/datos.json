@@ -1,28 +1,5 @@
 [
   {
-    "id": 2,
-    "nombre": "todo",
-    "apellido": "yoyo",
-    "genero": "masculino",
-    "fecha_nacimiento": "2002-07-21",
-    "telefono": "5561122332",
-    "correo_electronico": "ana.martinez@example.com",
-    "foto": "/uploads/1747930478624-484124832.jpg",
-    "instituto_procedencia": "UTS",
-    "carrera": "Ingeniería en Software",
-    "lenguajes_programacion": {
-      "JavaScript": true,
-      "Python": false,
-      "C++": true,
-      "Java": false,
-      "PHP": false,
-      "HTML": true,
-      "CSS": true,
-      "Dart": true
-    },
-    "notas": "Muy creativo"
-  },
-  {
     "id": 4,
     "nombre": "pablo",
     "apellido": "Pintado      ",
@@ -46,7 +23,7 @@
     "foto": "/uploads/1747930642809-264485208.jpg"
   },
   {
-    "id": 1747866820656,
+    "id": 5,
     "nombre": "parvovirus ",
     "apellido": "asd",
     "genero": "masculino",
@@ -68,7 +45,7 @@
     "notas": ""
   },
   {
-    "id": 1747866820657,
+    "id": 6,
     "nombre": "pablo",
     "apellido": "Martínez",
     "genero": "masculino",
@@ -90,7 +67,7 @@
     "notas": ""
   },
   {
-    "id": 6,
+    "id": 7,
     "nombre": "pablo",
     "apellido": "Pintado      ",
     "genero": "masculino",
@@ -110,5 +87,120 @@
       "Dart": false
     },
     "notas": "x"
+  },
+  {
+    "id": 8,
+    "nombre": "Yolatl",
+    "apellido": "Venegas",
+    "genero": "masculino",
+    "fecha_nacimiento": "2025-05-26",
+    "telefono": "9191203274",
+    "correo_electronico": "anenquipintadovenegas@gmail.com",
+    "instituto_procedencia": "UTS",
+    "carrera": "Ingeniería en Software",
+    "lenguajes_programacion": {
+      "JavaScript": false,
+      "Python": true,
+      "C++": false,
+      "Java": false,
+      "PHP": true,
+      "HTML": false,
+      "CSS": true,
+      "Dart": false
+    },
+    "notas": "sin notas",
+    "foto": "/uploads/1748273311750-349949267.jfif"
+  },
+  {
+    "id": 10,
+    "nombre": "nosdos",
+    "apellido": "talvez",
+    "genero": "masculino",
+    "fecha_nacimiento": "2025-05-26",
+    "telefono": "9191203275",
+    "correo_electronico": "ana.martinens@gmail.com",
+    "instituto_procedencia": "UTS",
+    "carrera": "Ingeniería en Sistemas",
+    "lenguajes_programacion": {
+      "JavaScript": false,
+      "Python": false,
+      "C++": false,
+      "Java": true,
+      "PHP": false,
+      "HTML": false,
+      "CSS": false,
+      "Dart": true
+    },
+    "notas": "kaldh",
+    "foto": "/uploads/1748274011861-110527858.jfif"
+  },
+  {
+    "id": 11,
+    "nombre": "parvovirus ",
+    "apellido": "afa",
+    "genero": "masculino",
+    "fecha_nacimiento": "2025-05-06",
+    "telefono": "9191203274",
+    "correo_electronico": "du.martinez@example.com",
+    "instituto_procedencia": "UTS",
+    "carrera": "Ingeniería en Sistemas",
+    "lenguajes_programacion": {
+      "JavaScript": false,
+      "Python": true,
+      "C++": true,
+      "Java": false,
+      "PHP": false,
+      "HTML": false,
+      "CSS": false,
+      "Dart": false
+    },
+    "notas": "g",
+    "foto": "http://localhost:3030/uploads/1748281270661-390698076.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "manueldos",
+    "apellido": "vasquez",
+    "genero": "masculino",
+    "fecha_nacimiento": "2025-05-16",
+    "telefono": "9191203274",
+    "correo_electronico": "anenquipintadovenegas@gmail.com",
+    "instituto_procedencia": "Universidad de Guadalajara",
+    "carrera": "Ingeniería en Computación",
+    "lenguajes_programacion": {
+      "JavaScript": false,
+      "Python": true,
+      "C++": false,
+      "Java": true,
+      "PHP": false,
+      "HTML": false,
+      "CSS": true,
+      "Dart": false
+    },
+    "notas": "nuevo",
+    "foto": "http://localhost:3030/uploads/1748284297767-349678474.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "manueldos",
+    "apellido": "vasquez",
+    "genero": "masculino",
+    "fecha_nacimiento": "2025-05-14",
+    "telefono": "9191203274",
+    "correo_electronico": "anenquipintadovenegas@gmail.com",
+    "instituto_procedencia": "Universidad de Guadalajara",
+    "carrera": "Ingeniería en Sistemas",
+    "lenguajes_programacion": {
+      "JavaScript": true,
+      "Python": false,
+      "C++": false,
+      "Java": false,
+      "PHP": false,
+      "HTML": false,
+      "CSS": false,
+      "Dart": false
+    },
+    "notas": "kg",
+    "foto": "http://localhost:3030/uploads/1748284993231-268523861.jfif"
   }
 ]

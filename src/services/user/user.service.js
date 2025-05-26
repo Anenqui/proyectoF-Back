@@ -48,7 +48,6 @@ const validarFechaNacimiento = async context => {
   return context;
 };
 
-// ✅ Hook para convertir strings JSON a objetos
 const parseJsonFields = (fields) => {
   return async (context) => {
     if (context.data) {
